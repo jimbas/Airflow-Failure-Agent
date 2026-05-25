@@ -1,0 +1,6 @@
+requests
+langchain-openai
+langchain-huggingface
+langchain-chroma
+langchain-core
+langgraph
