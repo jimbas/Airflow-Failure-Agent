@@ -22,14 +22,6 @@ CHROMA_DIR       = os.getenv("CHROMA_DIR", "./chroma_db")
 INCIDENT_FILE    = "./data/incidents_structured.json"
 
 # ── State ──────────────────────────────────────────────────────────────────────
-# class AgentState(TypedDict):
-#     messages:      Annotated[list, add_messages]
-#     dag_id:        str
-#     dag_run_id:    str
-#     failed_tasks:  list[dict]   # [{task_id, error_log}]
-#     context:       str
-#     analysis:      str
-
 class AgentState(TypedDict):
     messages:      Annotated[list, add_messages]
     dag_id:        str

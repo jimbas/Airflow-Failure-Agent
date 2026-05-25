@@ -1,4 +1,4 @@
-# Airflow Failure Agent
+# AI Agent for Airflow Failure Monitor
 
 An LLM-powered agent that polls Apache Airflow for failed DAG runs, retrieves relevant context from a vector knowledge base, and routes incidents to the appropriate action (alert, notify, review, or log).
 
@@ -38,7 +38,7 @@ All settings are passed via environment variables:
 ### Build
 
 ```bash
-docker build -t nua .
+docker build -t afaiagent .
 ```
 
 ### Run
@@ -51,7 +51,7 @@ docker run --rm \
   -e LLM_BASE_URL=http://your-llm:8000 \
   -v $(pwd)/chroma_db:/app/chroma_db \
   -v $(pwd)/data:/app/data \
-  nua
+  afaiagent
 ```
 
 ## Data Files
